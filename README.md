@@ -42,11 +42,11 @@ The data used to drive these insights are publicly provided directly by Citi Bik
 * Database of rides taken (as .csv files)
 
 
-The latter files can also be accessed via Google Big Query (INSERT LINK)
+The latter files can also be accessed via Google Big Query (https://bigquery.cloud.google.com/table/bigquery-public-data:new_york.citibike_trips)
 
-While the first set of data provides numbers on sales and revenue, the second set provides information on the user demographics. Unfortuantely, the data do not cross. The 
+While the first set of data provides numbers on sales and revenue, the second set provides information on individua rides and on user demographics. Unfortuantely, this information does not cross over and the data as they are decsribed above do not allow tracking of individual customers. This currently excludes any studies on customer churn or retention. However, the data set is still extremely powerful and allows me to expose highly relevant metrics for the business opration.
 
-is that the public dat ado not allow tracking individual customers. This currently excludes any studies on customer churn or retention. However, the data set is still extremely potent and allows me to expose highly relevant metrics for the business opration.
+
 
 
 
