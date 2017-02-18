@@ -48,6 +48,6 @@ While the first set of data provides numbers on sales and revenue, the second se
 
 ## Monthly revenue trends
 
-<img src="img/revenue_2015_2016.png" width="100%"/>
+<img src="img/revenue_2015_2016.png" width="600"/>
 
 ## User demographics
