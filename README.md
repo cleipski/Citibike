@@ -94,5 +94,6 @@ The model captures the seasonality and a growth trend well and using the learned
 This forecast make predictions about sales performance of annual passes under the assumption of static growth. This forecast metric can now be compared to actual monthly sales data. Significant deviations from the expected sales allow timely action to increase sales volume (e.g., marketing campaigns) or adjust growth expectations. The model can also take into account the newest data or business goals and update the forecast accordingly.
 
 
-
 ## User demographics
+
+<img src="img/scaling.gif" width="600"/>
