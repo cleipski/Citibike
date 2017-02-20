@@ -59,21 +59,6 @@ In combination with the intrinsic value of annual members for a subscription-bas
 
 > Annual customers drive the majority of the operational revenue and most of the growth.
 
-## Rides vs. customers
-
-The data that Citi Bike provides
-
-
-On a monthly basis, I compare the number of rides taken by subscribers with the number of active subscribers in the same month.
-
-<img src="img/monthly_rides_per_subscriber.png"  width="500"/>
-
-This figure reveals the seasonality that is to be expected for a bike-sharing service in New York City: the service is used much more during the summer than during the harsh winters.
-
-Taking a yearly aggregate reveals that the number of rides taken by each customer remained constant within 10% between 2015 and 2016.
-
-> The number of rides faithfully describes the number of customers.
-
 
 ## Monthly revenue trends
 
@@ -93,7 +78,60 @@ The model captures the seasonality and a growth trend well and using the learned
 
 This forecast make predictions about sales performance of annual passes under the assumption of static growth. This forecast metric can now be compared to actual monthly sales data. Significant deviations from the expected sales allow timely action to increase sales volume (e.g., marketing campaigns) or adjust growth expectations. The model can also take into account the newest data or business goals and update the forecast accordingly.
 
+## Rides vs. customers
+
+Before moving on to the second goal of this report, I have to establish the solid relation between 'number rides taken' and 'number of active annual customers'.
+
+On a monthly basis, the ratio of *number of rides taken by subscribers* (from the 'rides' data base) and the *number of active subscribers in the same month* (from the operating reports) show the expected seasonality.
+
+<img src="img/monthly_rides_per_subscriber.png"  width="500"/>
+
+More importantly, taking a yearly aggregate reveals that the number of rides taken by each customer remained - on average - constant within 10% between 2015 and 2016.
+
+> The number of rides faithfully describes the number of customers.
+
+This result will be extremely helpful in the following analysis.
+
 
 ## User demographics
 
-<img src="img/scaling.gif" width="600"/>
+The Citi Bike data base provides demographic information (age, gender) for all rides taken by subscribers.
+
+<img src="img/subscriber_demographics_2016.png" width="600"/>
+
+The age distribution for male and female subscribers is similar in shape, but male subscribers are responsible for 2.6 times (peak ratio) as many rides as female subscribers.
+
+Scaling the distribution of the female subscribers to the same peak hight as the male subscribers reveals an obvious mismatch in the demographic rider profile. While younger women (20 to 35 years of age) show a similar engagement profile as men (modulo the overall scaling of 2.6), women at ages 35 to 55 are less enagaged than their younger peers.
+
+
+> Drop in engagement for female subscribers of 35 to 55 years of age as compared to their younger peers.
+
+This immediately suggests a potential action:
+
+```
+Action: Increase engagement for female subscribers
+with ages 35 and up.
+```
+
+Support for this action comes from the growth Citi Bike has seen in the previous two years.
+
+<img src="img/subscriber_growth_demographics_2015_2016.png" width="600"/>
+
+
+Engagement by male and female subscribers has grown from 2015 to 2016 across all ages. The growth ratio is very similar between between both user cohorts, except for the age bracket of 35 to 55 years. At these ages, engagement among women actually grew stronger over the last two years than for their men.
+
+<img src="img/subscriber_growth_ratio_2015_2016.png" width="300"/>
+
+
+> Engagement among women 35 to 55 years of age grew stronger from 2015 to 2016 than for their male peers.
+
+
+
+```
+Action: Harness the momentum seen for women at ages
+35 to 55 and grow this cohort towards the level seen
+for their younger peers.```
+
+
+Potential:<br>
+Assuming that engagement among women at ages 35 to 55 can be increased to the same engagement profile as for their male peers (i.e., filling in the missing shoulder on the engagement histogram shown above), an additional 4,300 annual subscribers would be gained, translating into an increase in revenue on the order of $700,000 USD.
