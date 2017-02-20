@@ -3,17 +3,21 @@
 
 ## Introduction
 
-Citi Bike (https://www.citibikenyc.com/) is a bike-sharing program in New York City. They operate several hundred stations across mostly Manhattan and Brooklyn where customers can collect bikes and return them to any station after use.
+Citi Bike (https://www.citibikenyc.com/) is a bike-sharing program in New York City. They operate several hundred stations across mostly Manhattan and Brooklyn. Customers pick up bikes at a station and return them to any station after use.
 
-The customer model currently distinguishes between annual customers (subscribers) and casual customers (1-day and 3-day passes). During the timeframe determined by the pass, the customer may take as many rides as desired. The duration of any single ride, however,
-is limited.
+The customer model currently distinguishes between annual customers (subscribers) and casual customers (1-day and 3-day passes). During the timeframe determined by the pass, the customer may take as many rides as desired. The duration of any single ride, however, is limited.
 
-At the end of 2016, Citi Bike had approximately 120,000 active annual subscribers and recorded just shy of 14 million rides that year. The total annual revenue eclipsed 40 million USD in 2016.
+At the end of 2016, Citi Bike recorded:
+
+* 120,000 active annual subscribers
+* 14 million rides that year
+* 40 million USD annual revenue
 
 ## Goals
 
-A key metric for almost any business is current performance compared to expected performance. This allows decision makers to be constantly informed about the
-current state of the business and initiate action if required.
+The goal of this analytics project is to generate value for Citi Bike by providing trackable metrics and actionable insights.
+
+A key metric for almost any business is current performance compared to expected performance. This allows decision makers to be constantly informed about the current state of the business and initiate action if required.
 
 In a naturally seasonal business like Citi Bike (especially considering the location), forecasting expected performance is non-trivial. Simply comparing to previous months ignores the seasonality, while comparison with previous years may ignore growth trends or targets.
 
@@ -22,7 +26,7 @@ My first goal is therefore
 * to provide a robust forecast of expected business performance.
 
 
-A thorough understanding of the existing customers can yield important insights that allow to tap into new growth opportunities without requiring (potentially risky) geographical expansion. My second goal in this report therefore is
+A thorough understanding of the existing customers can yield important insights. It allows to tap into new growth opportunities without requiring (potentially risky) geographical expansion. My second goal in this report therefore is
 
 * to identify customer segments with the most potential to grow.
 
@@ -66,21 +70,28 @@ The monthly operating reports provide information on the number of annual passes
 
 <img src="img/monthly_variations_in_annual_passes_sold_01.png" width="400"/>
 
-The strong strong seasonality is again very obvious and makes a meaningful sales forecast non-trivial, in particular when combined with an additional growth expectation.
+The strong strong seasonality is very obvious and makes a meaningful sales forecast non-trivial, in particular when combined with an additional growth expectation.
 
-Focussing on the years 2015 and 2016 only (the most stable years in terms of Citi Bike's business operations and leadership), a the observed trends can be fit well with a model consisting of two Gaussian components.
+Focussing on the years 2015 and 2016 only (the most stable years in terms of Citi Bike's business operations and leadership), the observed trends can be fit well with a model consisting of two linked Gaussian components.
 
 <img src="img/monthly_variations_in_annual_passes_sold_02.png" width="400"/>
 
-The model captures the seasonality and a growth trend well and using the learned parameters I can create a forecast for the year 2017.
+The model captures the seasonality and a growth trend well. Using the learned parameters I can create a forecast for the year 2017.
 
 <img src="img/monthly_variations_in_annual_passes_sold_03.png" width="400"/>
 
-This forecast make predictions about sales performance of annual passes under the assumption of static growth. This forecast metric can now be compared to actual monthly sales data. Significant deviations from the expected sales allow timely action to increase sales volume (e.g., marketing campaigns) or adjust growth expectations. The model can also take into account the newest data or business goals and update the forecast accordingly.
+The forecast makes predictions about sales performance of annual passes under the assumption of static growth. This forecast metric can now be compared to actual monthly sales data. Significant deviations from the expected sales allow timely action to increase sales volume (e.g., marketing campaigns) or adjust growth expectations. The model can also take into account the newest data or business goals and update the forecast accordingly.
+
+> Based on the newest operating report, sales of annual passes for January 2017 exceeded the forecast by 40%, indicating a favorable start into 2017.
+
+This sales result is unusual because it is the first time in the history of Citi Bike that the January sales numbers exceed the December sales. One obvious factor driving these additional sales is that January 2017 was unusually warm for NYC. It will therefore be insightful to see if this performance can be sustained in February.
+
 
 ## Rides vs. customers
 
-Before moving on to the second goal of this report, I have to establish the solid relation between 'number rides taken' and 'number of active annual customers'.
+The rides data base provides demographic information only on a 'per ride' basis. Much of the following analysis will base directly on this data. The subsequent interpretation of the 'ground truth' results in terms of 'numbers of customers' is established in this section.
+
+The task is clear: I have to establish the solid relation between 'number rides taken' and 'number of active annual customers'.
 
 On a monthly basis, the ratio of *number of rides taken by subscribers* (from the 'rides' data base) and the *number of active subscribers in the same month* (from the operating reports) show the expected seasonality.
 
@@ -89,8 +100,6 @@ On a monthly basis, the ratio of *number of rides taken by subscribers* (from th
 More importantly, taking a yearly aggregate reveals that the number of rides taken by each customer remained - on average - constant within 10% between 2015 and 2016.
 
 > The number of rides faithfully describes the number of customers.
-
-This result will be extremely helpful in the following analysis.
 
 
 ## User demographics
@@ -101,7 +110,7 @@ The Citi Bike data base provides demographic information (age, gender) for all r
 
 The age distribution for male and female subscribers is similar in shape, but male subscribers are responsible for 2.6 times (peak ratio) as many rides as female subscribers.
 
-Scaling the distribution of the female subscribers to the same peak hight as the male subscribers reveals an obvious mismatch in the demographic rider profile. While younger women (20 to 35 years of age) show a similar engagement profile as men (modulo the overall scaling of 2.6), women at ages 35 to 55 are less enagaged than their younger peers.
+Scaling the distribution of the female subscribers to the same peak hight as the male subscribers reveals an obvious mismatch in the demographic rider profile. While younger women (20 to 35 years of age) show a similar engagement profile as men (modulo the overall scaling of 2.6), women at ages 35 to 55 are less engaged than their younger peers.
 
 
 > Drop in engagement for female subscribers of 35 to 55 years of age as compared to their younger peers.
@@ -132,9 +141,7 @@ Engagement by male and female subscribers has grown from 2015 to 2016 across all
 
 ---
 **Action**<br>
-Harness the momentum seen for women at ages
-35 to 55 and grow this cohort towards the level seen
-for their younger peers.
+Harness the momentum seen for women at ages 35 to 55 and grow this cohort towards the level seen for their younger peers.
 
 ---
 
