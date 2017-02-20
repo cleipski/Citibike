@@ -31,7 +31,7 @@ A thorough understanding of the existing customers can yield important insights 
 
 Using monthly revenue data from 2015 and 2016, I was able to build a model that captures the seasonality as well as the observed year-over-year growth. Using the learned model parameters, I can forecast the monthly performance. This forecast can be used as a key indicator to track business performance.
 
-A demographic study of the annual subscribers in 2015 and 2016 reveals that female customers of age 35 years and up are a very promising customer segment for growth. This customer segment is underrepresented when compared to their younger peers, but showed increased growth from 2015 to 2016. Harnessing this growth momentum could yield an additional 4300 annual customers, equaling a boost of revenue on the order of 700,000 USD.
+A demographic study of the annual subscribers in 2015 and 2016 reveals that female customers of age 35 years and up are a very promising customer segment for growth. This customer segment is underrepresented when compared to their younger peers, but showed increased growth from 2015 to 2016. Harnessing this growth momentum could yield an additional 4,300 annual customers, equaling a boost of revenue on the order of 700,000 USD.
 
 
 ## Data
@@ -108,10 +108,6 @@ Scaling the distribution of the female subscribers to the same peak hight as the
 
 This immediately suggests a potential action:
 
-```
-Action: Increase engagement for female subscribers
-with ages 35 and up.
-```
 ---
 **Action**<br>
 Increase engagement for female subscribers with ages 35 and up.
@@ -134,11 +130,14 @@ Engagement by male and female subscribers has grown from 2015 to 2016 across all
 
 
 
-```
-Action: Harness the momentum seen for women at ages
+---
+**Action**<br>
+Harness the momentum seen for women at ages
 35 to 55 and grow this cohort towards the level seen
 for their younger peers.
-```
+
+---
+
 
 
 Potential:<br>
