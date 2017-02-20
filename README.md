@@ -130,7 +130,8 @@ Engagement by male and female subscribers has grown from 2015 to 2016 across all
 ```
 Action: Harness the momentum seen for women at ages
 35 to 55 and grow this cohort towards the level seen
-for their younger peers.```
+for their younger peers.
+```
 
 
 Potential:<br>
