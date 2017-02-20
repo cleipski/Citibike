@@ -112,6 +112,13 @@ This immediately suggests a potential action:
 Action: Increase engagement for female subscribers
 with ages 35 and up.
 ```
+---
+**Action**<br>
+Increase engagement for female subscribers with ages 35 and up.
+
+---
+
+
 
 Support for this action comes from the growth Citi Bike has seen in the previous two years.
 
