@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Citi Bike (https://www.citibikenyc.com/) is a bike-sharing program in New York City. They operate several hundred stations across mostly Manhattan and Brooklyn. Customers pick up bikes at a station and return them to any station after use.
+Citi Bike (https://www.citibikenyc.com/) is a bike-sharing program in New York City. They operate several hundred stations across mostly Manhattan and Brooklyn. Customers can pick up bikes at a station and return them to any station after use.
 
 The customer model currently distinguishes between annual customers (subscribers) and casual customers (1-day and 3-day passes). During the timeframe determined by the pass, the customer may take as many rides as desired. The duration of any single ride, however, is limited.
 
@@ -61,7 +61,7 @@ The 30% growth in revenue between 2015 and 2016 is almost entirely carried by th
 
 In combination with the intrinsic value of annual members for a subscription-based business like Citi Bike, I will focus my analysis on annual customers only.
 
-> Annual customers drive the majority of the operational revenue and most of the growth.
+> <span style="color: red;">Annual customers drive the majority of the operational revenue and most of the growth.</span>
 
 
 ## Monthly revenue trends
@@ -70,9 +70,9 @@ The monthly operating reports provide information on the number of annual passes
 
 <img src="img/monthly_variations_in_annual_passes_sold_01.png" width="400"/>
 
-The strong strong seasonality is very obvious and makes a meaningful sales forecast non-trivial, in particular when combined with an additional growth expectation.
+The strong seasonality is very obvious and makes a meaningful sales forecast non-trivial, in particular when combined with an additional growth expectation.
 
-Focussing on the years 2015 and 2016 only (the most stable years in terms of Citi Bike's business operations and leadership), the observed trends can be fit well with a model consisting of two linked Gaussian components.
+Focusing on the years 2015 and 2016 only (the most stable years in terms of Citi Bike's business operations and leadership), the observed trends can be fit well with a model consisting of two linked Gaussian components.
 
 <img src="img/monthly_variations_in_annual_passes_sold_02.png" width="400"/>
 
@@ -82,7 +82,7 @@ The model captures the seasonality and a growth trend well. Using the learned pa
 
 The forecast makes predictions about sales performance of annual passes under the assumption of static growth. This forecast metric can now be compared to actual monthly sales data. Significant deviations from the expected sales allow timely action to increase sales volume (e.g., marketing campaigns) or adjust growth expectations. The model can also take into account the newest data or business goals and update the forecast accordingly.
 
-> Based on the newest operating report, sales of annual passes for January 2017 exceeded the forecast by 40%, indicating a favorable start into 2017.
+> <span style="color: red;">Based on the newest operating report, sales of annual passes for January 2017 exceeded the forecast by 40%, indicating a favorable start into 2017.</span>
 
 This sales result is unusual because it is the first time in the history of Citi Bike that the January sales numbers exceed the December sales. One obvious factor driving these additional sales is that January 2017 was unusually warm for NYC. It will therefore be insightful to see if this performance can be sustained in February.
 
@@ -91,7 +91,7 @@ This sales result is unusual because it is the first time in the history of Citi
 
 The rides data base provides demographic information only on a 'per ride' basis. Much of the following analysis will base directly on this data. The subsequent interpretation of the 'ground truth' results in terms of 'numbers of customers' is established in this section.
 
-The task is clear: I have to establish the solid relation between 'number rides taken' and 'number of active annual customers'.
+The task is clear: I have to establish the solid relation between 'number of rides taken' and 'number of active annual customers'.
 
 On a monthly basis, the ratio of *number of rides taken by subscribers* (from the 'rides' data base) and the *number of active subscribers in the same month* (from the operating reports) show the expected seasonality.
 
@@ -99,7 +99,7 @@ On a monthly basis, the ratio of *number of rides taken by subscribers* (from th
 
 More importantly, taking a yearly aggregate reveals that the number of rides taken by each customer remained - on average - constant within 10% between 2015 and 2016.
 
-> The number of rides faithfully describes the number of customers.
+> <span style="color: red;">The number of rides faithfully describes the number of customers.</span>
 
 
 ## User demographics
@@ -113,7 +113,7 @@ The age distribution for male and female subscribers is similar in shape, but ma
 Scaling the distribution of the female subscribers to the same peak hight as the male subscribers reveals an obvious mismatch in the demographic rider profile. While younger women (20 to 35 years of age) show a similar engagement profile as men (modulo the overall scaling of 2.6), women at ages 35 to 55 are less engaged than their younger peers.
 
 
-> Drop in engagement for female subscribers of 35 to 55 years of age as compared to their younger peers.
+> <span style="color: red;"> Drop in engagement for female subscribers of 35 to 55 years of age as compared to their younger peers.</span>
 
 This immediately suggests a potential action:
 
@@ -130,12 +130,12 @@ Support for this action comes from the growth Citi Bike has seen in the previous
 <img src="img/subscriber_growth_demographics_2015_2016.png" width="600"/>
 
 
-Engagement by male and female subscribers has grown from 2015 to 2016 across all ages. The growth ratio is very similar between between both user cohorts, except for the age bracket of 35 to 55 years. At these ages, engagement among women actually grew stronger over the last two years than for their men.
+Engagement by male and female subscribers has grown from 2015 to 2016 across all ages. The growth ratio is very similar between between both user cohorts, except for the age bracket of 35 to 55 years. At these ages, engagement among women actually grew stronger over the last two years than for men.
 
 <img src="img/subscriber_growth_ratio_2015_2016.png" width="300"/>
 
 
-> Engagement among women 35 to 55 years of age grew stronger from 2015 to 2016 than for their male peers.
+> <span style="color: red;">Engagement among women 35 to 55 years of age grew stronger from 2015 to 2016 than for their male peers.</span>
 
 
 
