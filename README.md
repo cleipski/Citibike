@@ -10,12 +10,14 @@ A demographic study of the annual subscribers in 2015 and 2016 reveals that fema
 ## Revenue streams
 
 
-> <span style="color: red;">Annual customers drive the majority of the operational revenue and most of the growth.</span>
+> Annual customers drive the majority of the operational revenue and most of the growth.
 
 <img src="img/revenue_2015_2016.png" width="400"/>
 
 
 ## Monthly revenue trends
+
+> Significant deviations from the expected sales allow timely action to increase sales volume (e.g., marketing campaigns) or adjust growth expectations. 
 
 
 <img src="img/monthly_variations_in_annual_passes_sold_03.png" width="400"/>
@@ -24,14 +26,14 @@ A demographic study of the annual subscribers in 2015 and 2016 reveals that fema
 
 ## User demographics
 
-> <span style="color: red;"> Drop in engagement for female subscribers of 35 to 55 years of age as compared to their younger peers.</span>
+>  Drop in engagement for female subscribers of 35 to 55 years of age as compared to their younger peers.
 
 
 
 <img src="img/subscriber_demographics_2016.png" width="600"/>
 
 
-> <span style="color: red;">Engagement among women 35 to 55 years of age grew stronger from 2015 to 2016 than for their male peers.</span>
+> Engagement among women 35 to 55 years of age grew stronger from 2015 to 2016 than for their male peers.
 
 <img src="img/subscriber_growth_ratio_2015_2016.png" width="300"/>
 
