@@ -7,6 +7,8 @@
 
 2. A demographic study of the annual subscribers in 2015 and 2016 reveals that female customers of age 35 years and up are a very promising customer segment for growth. This customer segment is underrepresented when compared to their younger peers, but showed increased growth from 2015 to 2016. Harnessing this growth momentum could yield an additional 4,300 annual customers, equaling a boost of revenue on the order of 700,000 USD.
 
+(Full report available [here](https://github.com/cleipski/Citibike/blob/master/Citibike_full_report.ipynb)).
+
 ## Revenue streams
 
 
