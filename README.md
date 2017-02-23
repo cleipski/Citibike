@@ -12,7 +12,7 @@
 
 > Annual customers drive the majority of the operational revenue and most of the growth.
 
-<img src="img/revenue_2015_2016.png" width="400"/>
+<img src="img/revenue_2015_2016.png" width="600"/>
 
 
 ## Monthly revenue trends
