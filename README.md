@@ -17,7 +17,7 @@ A demographic study of the annual subscribers in 2015 and 2016 reveals that fema
 
 ## Monthly revenue trends
 
-> Significant deviations from the expected sales allow timely action to increase sales volume (e.g., marketing campaigns) or adjust growth expectations. 
+> Significant deviations from the expected sales allow timely action to increase sales volume (e.g., marketing campaigns) or adjust growth expectations.
 
 
 <img src="img/monthly_variations_in_annual_passes_sold_03.png" width="400"/>
@@ -33,7 +33,7 @@ A demographic study of the annual subscribers in 2015 and 2016 reveals that fema
 <img src="img/subscriber_demographics_2016.png" width="600"/>
 
 
-> Engagement among women 35 to 55 years of age grew stronger from 2015 to 2016 than for their male peers.
+> Growth in engagement among women 35 to 55 years of age was stronger from 2015 to 2016 than for their male peers.
 
 <img src="img/subscriber_growth_ratio_2015_2016.png" width="300"/>
 
